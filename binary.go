@@ -50,10 +50,10 @@ const (
 type Segment struct {
 	// Virtual address of the segment once loaded into memory.
 	Addr uint64
-	// Data contained within the segment.
-	Data []byte
 	// Access permissions of the segment in memory.
 	Perm Perm
+	// Data contained within the segment.
+	Data []byte
 }
 
 // A Section represent a continuous section of memory.
@@ -62,10 +62,10 @@ type Section struct {
 	Name string
 	// Virtual address of the section once loaded into memory.
 	Addr uint64
-	// Data contained within the section.
-	Data []byte
 	// Access permissions of the section in memory.
 	Perm Perm
+	// Data contained within the section.
+	Data []byte
 }
 
 // Perm specifies the access permissions of a segment or section in memory.

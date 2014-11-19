@@ -47,10 +47,6 @@ func Parse(path string) (file *binary.File, err error) {
 		section := new(binary.Section)
 		section.Name = stringFromSZ(sectHdr.Name[:])
 		section.Addr = uint64(base + sectHdr.RelAddr)
-		section.Data, err = f.Section(sectHdr)
-		if err != nil {
-			return nil, err
-		}
 		if sectHdr.Flags&pe.SectFlagMemExec != 0 {
 			section.Perm |= binary.PermExecute
 		}
@@ -59,6 +55,10 @@ func Parse(path string) (file *binary.File, err error) {
 		}
 		if sectHdr.Flags&pe.SectFlagMemRead != 0 {
 			section.Perm |= binary.PermRead
+		}
+		section.Data, err = f.Section(sectHdr)
+		if err != nil {
+			return nil, err
 		}
 		file.Sections = append(file.Sections, section)
 	}
