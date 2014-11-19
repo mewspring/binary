@@ -1,8 +1,7 @@
 WIP
 ---
 
-This project is a *work in progress*. The implementation is *incomplete* and
-subject to change. The documentation can be inaccurate.
+This project is a *work in progress*. The implementation is *incomplete* and subject to change. The documentation can be inaccurate.
 
 binary
 ======
@@ -11,7 +10,7 @@ binary
 [![Coverage Status](https://img.shields.io/coveralls/mewrev/binary.svg)](https://coveralls.io/r/mewrev/binary?branch=master)
 [![GoDoc](https://godoc.org/github.com/mewrev/binary?status.svg)](https://godoc.org/github.com/mewrev/binary)
 
-This package provides a uniform representation for the data of binary executables.
+This project aims to provide a uniform representation for the data of ELF and PE binary executables.
 
 Documentation
 -------------
