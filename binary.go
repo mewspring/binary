@@ -15,6 +15,10 @@ type Binary struct {
 	Segments []*Segment
 	// Sections of data with associated access permissions.
 	Sections []*Section
+	// Imports maps from virtual addresses to import names.
+	Imports map[uint64]string
+	// Exports maps from export names to virtual addresses.
+	Exports map[string]uint64
 }
 
 // Arch specifies the machine architecture of an executable's assembly
