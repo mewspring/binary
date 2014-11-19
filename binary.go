@@ -8,13 +8,13 @@ type File struct {
 	Format Format
 	// Machine architecture of the executable's assembly instructions.
 	Arch Arch
+	// Virtual address to the entry point of the executable, which indicates the
+	// starting point of program execution.
+	Entry uint64
 	// Segments of data with associated access permissions.
 	Segments []*Segment
 	// Sections of data with associated access permissions.
 	Sections []*Section
-	// Virtual address to the entry point of the executable, which indicates the
-	// starting point of program execution.
-	Entry uint64
 	// Imports maps from virtual addresses to import names.
 	Imports map[uint64]string
 	// Exports maps from export names to virtual addresses.
