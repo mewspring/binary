@@ -1,10 +1,8 @@
-WIP
----
+## WIP
 
 This project is a *work in progress*. The implementation is *incomplete* and subject to change. The documentation can be inaccurate.
 
-binary
-======
+# binary
 
 [![Build Status](https://travis-ci.org/mewrev/binary.svg?branch=master)](https://travis-ci.org/mewrev/binary)
 [![Coverage Status](https://img.shields.io/coveralls/mewrev/binary.svg)](https://coveralls.io/r/mewrev/binary?branch=master)
@@ -12,8 +10,7 @@ binary
 
 This project aims to provide a uniform representation for the data of ELF and PE binary executables.
 
-Documentation
--------------
+## Documentation
 
 Documentation provided by GoDoc.
 
@@ -21,9 +18,8 @@ Documentation provided by GoDoc.
 
 [binary]: http://godoc.org/github.com/mewrev/binary
 
-public domain
--------------
+## Public domain
 
-The source code and any original content of this repository is hereby released into the *[public domain]*.
+The source code and any original content of this repository is hereby released into the [public domain].
 
 [public domain]: https://creativecommons.org/publicdomain/zero/1.0/
