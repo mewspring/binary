@@ -8,7 +8,7 @@ This project is a *work in progress*. The implementation is *incomplete* and sub
 [![Coverage Status](https://img.shields.io/coveralls/mewrev/binary.svg)](https://coveralls.io/r/mewrev/binary?branch=master)
 [![GoDoc](https://godoc.org/github.com/mewrev/binary?status.svg)](https://godoc.org/github.com/mewrev/binary)
 
-This project aims to provide a uniform representation for the data of ELF and PE binary executables.
+The binary project aims to provide a uniform representation for the data of ELF and PE binary executables.
 
 ## Documentation
 
