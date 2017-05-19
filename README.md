@@ -1,3 +1,14 @@
+# NOTICE: New project home!
+
+The binary library has been merged with the `decomp/exp` project (see [mewspring/binary#8](https://github.com/mewspring/binary/issues/1)).
+
+For active development, the new home of `mewrev/binary` is the `decomp/exp` repository, under the import path `bin`.
+
+```diff
+-import "github.com/mewrev/binary"
++import "github.com/decomp/exp/bin"
+```
+
 ## WIP
 
 This project is a *work in progress*. The implementation is *incomplete* and subject to change. The documentation can be inaccurate.
